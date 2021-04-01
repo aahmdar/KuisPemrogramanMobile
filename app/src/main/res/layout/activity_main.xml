@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad1"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:textStyle="bold"
+        android:text="Kuis Pemrograman Mobile"
+        android:textSize="40dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik disini untuk melihat Biodata Saya"
+        android:layout_margin="60dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#FF1100"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:onClick="Biodata"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="120dp"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:onClick="Maps"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:src="@drawable/ic_phone"
+            android:onClick="Phone"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:src="@drawable/ic_logout"
+        android:onClick="Keluar"/>
+
+</LinearLayout>
